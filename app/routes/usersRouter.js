@@ -14,7 +14,7 @@ router.use(function(req, res, next){
 	next();
 });
 router.get('/all', controller.allAccess)
-router.get('/user',[authjwt.verifyToken], controller.userBoard)
+// router.get('/user',[authjwt.verifyToken], controller.userBoard)
 router.get('/mod',[authjwt.verifyToken, authjwt.isModerator], controller.moderatorBoard)
 router.get('/admin',[authjwt.verifyToken, authjwt.isAdmin], controller.adminBoard)
 
