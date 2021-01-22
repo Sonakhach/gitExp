@@ -1,6 +1,6 @@
 exports.allAccess = (req,res)=>{
-	// res.status(200).render('register');
-	 res.render('register');
+	res.status(200).render('register');
+	 // res.render('register');
 };
 exports.userBoard = (req,res)=>{
 	res.status(200).send('User Content.');
