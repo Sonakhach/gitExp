@@ -13,7 +13,7 @@ router.use(function(req, res, next){
         'x-access-token, Origin, Content-Type, Accept');
 	next();
 });
-router.get('/all', controller.allAccess)
+router.get('/register', controller.allAccess)
 // router.get('/user',[authjwt.verifyToken], controller.userBoard)
 router.get('/mod',[authjwt.verifyToken, authjwt.isModerator], controller.moderatorBoard)
 router.get('/admin',[authjwt.verifyToken, authjwt.isAdmin], controller.adminBoard)
