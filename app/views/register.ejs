@@ -14,8 +14,10 @@
 <div class="container">
 
 	<h1>Login</h1>
-
-	<form action="/all/register.ejs" method="POST">	
+    <% if(message){ %>
+      <h1> <%=message%>
+      	<% } %>
+	<form action="/register" method="POST">	
 	  <div class="form-group">
 	    <label for="exampleInputEmail1">Email address</label>
 	    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">

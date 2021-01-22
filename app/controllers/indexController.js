@@ -7,6 +7,3 @@ class indexController{
 }
 
 module.exports=new indexController()
-
-
-
